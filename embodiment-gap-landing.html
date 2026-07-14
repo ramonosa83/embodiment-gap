@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Embodiment Gap — Live Masterclass with Ramon Osa</title>
+<meta name="description" content="You understand everything about manifestation. And you're still stuck. One live hour on why — and the mechanism that closes the gap. Monday, July 27, 8am Pacific.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#131009;        /* the dark room */
+    --ink-2:#1C1710;      /* raised surface */
+    --ink-3:#251E14;      /* card edge tone */
+    --bone:#EFE7D8;       /* warm bone text */
+    --stone:#A79A83;      /* muted secondary */
+    --ember:#D08C3C;      /* the one light on */
+    --ember-soft:#E3A960;
+    --line:rgba(239,231,216,.14);
+    --maxw:680px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--ink);
+    color:var(--bone);
+    font-family:'Newsreader', Georgia, serif;
+    font-size:1.2rem;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  ::selection{background:var(--ember);color:var(--ink)}
+  a{color:var(--ember-soft)}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--ember);outline-offset:3px;border-radius:2px}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .wide{max-width:960px}
+
+  .eyebrow{
+    font-family:'Instrument Sans',sans-serif;
+    font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--ember);font-weight:600;
+  }
+
+  /* ---------- The gap divider motif ---------- */
+  .gap-line{display:flex;align-items:center;gap:0;max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .gap-line span{height:1px;background:var(--line);flex:1}
+  .gap-line i{width:56px;flex:none} /* the literal gap */
+  section{padding:96px 0}
+
+  /* ---------- Hero ---------- */
+  header.hero{
+    min-height:92vh;display:flex;align-items:center;position:relative;
+    padding:110px 0 80px;text-align:center;
+  }
+  .breath{
+    position:absolute;left:50%;top:42%;transform:translate(-50%,-50%);
+    width:min(720px,120vw);aspect-ratio:1;border-radius:50%;
+    background:radial-gradient(circle, rgba(208,140,60,.17) 0%, rgba(208,140,60,.06) 42%, transparent 70%);
+    animation:breathe 7.5s ease-in-out infinite;
+    pointer-events:none;z-index:0;
+  }
+  @keyframes breathe{
+    0%,100%{transform:translate(-50%,-50%) scale(.92);opacity:.75}
+    50%{transform:translate(-50%,-50%) scale(1.06);opacity:1}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .breath{animation:none}
+    html{scroll-behavior:auto}
+  }
+  .hero .wrap{position:relative;z-index:1;max-width:840px}
+  h1{
+    font-family:'Fraunces',serif;
+    font-optical-sizing:auto;
+    font-weight:300;
+    font-size:clamp(2.5rem, 7vw, 4.6rem);
+    line-height:1.08;
+    letter-spacing:-.015em;
+    margin:26px 0 8px;
+  }
+  h1 em{font-style:italic;color:var(--ember-soft)}
+  .hero .sub{
+    max-width:600px;margin:26px auto 0;
+    color:var(--stone);font-size:1.15rem;
+  }
+  .hero .sub strong{color:var(--bone);font-weight:500}
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-block;
+    font-family:'Instrument Sans',sans-serif;font-weight:600;font-size:1rem;
+    letter-spacing:.02em;text-decoration:none;text-align:center;
+    padding:18px 40px;border-radius:999px;
+    background:var(--ember);color:var(--ink);
+    transition:transform .18s ease, box-shadow .18s ease;
+    box-shadow:0 0 0 rgba(208,140,60,0);
+  }
+  .btn:hover{transform:translateY(-2px);box-shadow:0 8px 34px rgba(208,140,60,.35)}
+  .btn.ghost{
+    background:transparent;color:var(--bone);
+    border:1px solid var(--line);box-shadow:none;
+  }
+  .btn.ghost:hover{border-color:var(--ember);color:var(--ember-soft)}
+  .cta-note{
+    font-family:'Instrument Sans',sans-serif;font-size:.85rem;color:var(--stone);
+    margin-top:14px;letter-spacing:.02em;
+  }
+  .cta-row{margin-top:42px}
+
+  /* ---------- Typography ---------- */
+  h2{
+    font-family:'Fraunces',serif;font-weight:300;
+    font-size:clamp(1.9rem, 4.5vw, 2.9rem);
+    line-height:1.15;letter-spacing:-.01em;
+    margin:18px 0 34px;
+  }
+  h2 em{font-style:italic;color:var(--ember-soft)}
+  p{margin:0 0 24px;color:var(--bone)}
+  p.mute{color:var(--stone)}
+  .punch{
+    font-family:'Fraunces',serif;font-weight:400;font-style:italic;
+    font-size:clamp(1.35rem,3vw,1.7rem);line-height:1.35;
+    color:var(--ember-soft);margin:40px 0;
+  }
+  .oneline{margin-bottom:14px}
+
+  /* ---------- Mirror section ---------- */
+  .mirror p{font-size:1.25rem}
+  .mirror .beat{margin-bottom:16px}
+
+  /* ---------- Story ---------- */
+  .story{background:var(--ink-2)}
+  .story .drop{
+    font-family:'Fraunces',serif;font-size:1.05em;
+  }
+
+  /* ---------- Hour bullets ---------- */
+  .hour-list{list-style:none;margin:44px 0 0}
+  .hour-list li{
+    padding:28px 0;border-top:1px solid var(--line);
+    display:grid;grid-template-columns:56px 1fr;gap:8px;align-items:start;
+  }
+  .hour-list li:last-child{border-bottom:1px solid var(--line)}
+  .hour-list .tick{
+    font-family:'Instrument Sans',sans-serif;font-size:.8rem;letter-spacing:.14em;
+    color:var(--ember);padding-top:7px;
+  }
+  .hour-list h3{
+    font-family:'Fraunces',serif;font-weight:400;font-size:1.35rem;margin-bottom:8px;
+  }
+  .hour-list p{margin:0;color:var(--stone);font-size:1.05rem}
+
+  /* ---------- Logistics ---------- */
+  .logistics{
+    border:1px solid var(--line);border-radius:16px;
+    padding:40px 36px;margin-top:20px;
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:32px;
+    background:var(--ink-2);
+  }
+  .logistics div b{
+    display:block;font-family:'Instrument Sans',sans-serif;font-size:.75rem;
+    letter-spacing:.2em;text-transform:uppercase;color:var(--stone);
+    font-weight:600;margin-bottom:10px;
+  }
+  .logistics div span{font-family:'Fraunces',serif;font-size:1.25rem}
+
+  /* ---------- Two paths ---------- */
+  .paths{display:grid;grid-template-columns:1fr 1.15fr;gap:24px;margin-top:48px;align-items:stretch}
+  @media(max-width:760px){.paths{grid-template-columns:1fr}}
+  .path{
+    border:1px solid var(--line);border-radius:20px;padding:44px 36px;
+    background:var(--ink-2);display:flex;flex-direction:column;
+  }
+  .path.ic{
+    border-color:rgba(208,140,60,.55);
+    background:linear-gradient(160deg, #241B0F 0%, var(--ink-2) 60%);
+    box-shadow:0 10px 60px rgba(208,140,60,.12);
+    position:relative;
+  }
+  .path .tag{
+    font-family:'Instrument Sans',sans-serif;font-size:.72rem;font-weight:600;
+    letter-spacing:.2em;text-transform:uppercase;color:var(--stone);margin-bottom:18px;
+  }
+  .path.ic .tag{color:var(--ember)}
+  .price{font-family:'Fraunces',serif;font-weight:300;font-size:3.2rem;line-height:1}
+  .price small{font-size:1.1rem;color:var(--stone);font-family:'Newsreader',serif}
+  .path ul{list-style:none;margin:30px 0 36px;flex:1}
+  .path ul li{
+    padding:11px 0 11px 30px;position:relative;color:var(--bone);
+    font-size:1.05rem;border-top:1px solid rgba(239,231,216,.07);
+  }
+  .path ul li:first-child{border-top:none}
+  .path ul li::before{
+    content:"";position:absolute;left:2px;top:20px;
+    width:12px;height:1px;background:var(--ember);
+  }
+  .path .btn{width:100%}
+  .path .math{
+    margin-top:16px;text-align:center;font-family:'Instrument Sans',sans-serif;
+    font-size:.83rem;color:var(--stone);
+  }
+
+  /* ---------- For / not for ---------- */
+  .forgrid{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:44px}
+  @media(max-width:700px){.forgrid{grid-template-columns:1fr;gap:36px}}
+  .forgrid h3{
+    font-family:'Instrument Sans',sans-serif;font-size:.8rem;letter-spacing:.2em;
+    text-transform:uppercase;font-weight:600;margin-bottom:22px;
+  }
+  .forgrid .yes h3{color:var(--ember)}
+  .forgrid .no h3{color:var(--stone)}
+  .forgrid p{font-size:1.08rem;padding:14px 0;margin:0;border-top:1px solid var(--line)}
+  .forgrid .no p{color:var(--stone)}
+
+  /* ---------- FAQ ---------- */
+  .faq details{border-top:1px solid var(--line)}
+  .faq details:last-of-type{border-bottom:1px solid var(--line)}
+  .faq summary{
+    cursor:pointer;list-style:none;padding:26px 40px 26px 0;position:relative;
+    font-family:'Fraunces',serif;font-size:1.3rem;font-weight:400;
+  }
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{
+    content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);
+    color:var(--ember);font-family:'Instrument Sans',sans-serif;font-size:1.4rem;font-weight:400;
+    transition:transform .2s ease;
+  }
+  .faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+  .faq details p{color:var(--stone);padding:0 0 28px;max-width:600px}
+
+  /* ---------- Final ---------- */
+  .final{text-align:center;padding:130px 0 110px;position:relative}
+  .final .breath{top:50%;opacity:.7}
+  .final .wrap{position:relative;z-index:1}
+  .final h2{font-size:clamp(2.1rem,5.5vw,3.4rem)}
+
+  footer{
+    padding:48px 24px 64px;text-align:center;
+    font-family:'Instrument Sans',sans-serif;font-size:.82rem;color:var(--stone);
+    border-top:1px solid var(--line);letter-spacing:.04em;
+  }
+  footer b{color:var(--bone);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}
+
+  /* Scroll reveal (subtle, disabled for reduced motion) */
+  .rev{opacity:0;transform:translateY(18px);transition:opacity .8s ease, transform .8s ease}
+  .rev.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion: reduce){.rev{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="breath" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="eyebrow">Live Masterclass &nbsp;·&nbsp; Monday, July 27 &nbsp;·&nbsp; 8:00am Pacific</div>
+    <h1>You understand everything.<br>And you're <em>still stuck.</em></h1>
+    <p class="sub">There's a name for the distance between what you know and how you actually live: <strong>The Embodiment Gap</strong>. In one live hour, Ramon Osa will show you what it is, why the most intelligent seekers fall into it hardest — and the specific mechanism that closes it.</p>
+    <div class="cta-row">
+      <!-- PASTE $97 CHECKOUT LINK BELOW (ThriveCart) -->
+      <a class="btn" href="#paths">Grab your seat</a>
+      <div class="cta-note">$97 one-time — or free with the Inner Circle ($47/mo)</div>
+    </div>
+  </div>
+</header>
+
+<div class="gap-line" aria-hidden="true"><span></span><i></i><span></span></div>
+
+<!-- ============ THE MIRROR ============ -->
+<section class="mirror">
+  <div class="wrap rev">
+    <div class="eyebrow">Sound familiar?</div>
+    <h2>You could <em>teach</em> this stuff.</h2>
+    <p class="beat">You've read Neville. You've studied Dispenza. You can explain the law of assumption to anyone who'll listen — and do it better than most people who charge for it.</p>
+    <p class="beat">You've journaled. Affirmed. Visualized. Scripted. Meditated at 5am with your hand on your heart.</p>
+    <p class="beat">And your bank account, your work, your actual Tuesday afternoons — they look almost exactly like they did three years ago.</p>
+    <p class="beat mute">So a quiet voice has started asking the question you'd never say out loud: <em>if I know all of this&hellip; is something wrong with me?</em></p>
+    <p class="punch">Nothing is wrong with you. But you have been trying to close the wrong gap.</p>
+  </div>
+</section>
+
+<div class="gap-line" aria-hidden="true"><span></span><i></i><span></span></div>
+
+<!-- ============ THE BIG IDEA ============ -->
+<section>
+  <div class="wrap rev">
+    <div class="eyebrow">The Big Idea</div>
+    <h2>It was never a knowledge gap.<br>It's an <em>embodiment</em> gap.</h2>
+    <p>Here's the assumption running your life: <em>if I'm still stuck, I must be missing something.</em> One more book. One more technique. One more teacher who finally makes it click.</p>
+    <p>But knowing and being are the same thing. If you <em>actually</em> knew what you've studied — knew it the way you know how to drive — it would already be in your behavior. It would show up in what you do, what you risk, what you reach for. Automatically.</p>
+    <p>The fact that it isn't tells you something most seekers never let themselves hear: the gap between your knowledge and your life can't be closed with more knowledge. Every new book makes the mountain of knowing taller — and the distance to being <em>wider</em>.</p>
+    <p>In this class, Ramon names what the gap is actually made of, gives you the single mechanism that bridges it — and shows you the real reason you haven't been doing it. Hint: it's not laziness, and it's not a lack of clarity. It's something your body has been doing without your permission.</p>
+  </div>
+</section>
+
+<div class="gap-line" aria-hidden="true"><span></span><i></i><span></span></div>
+
+<!-- ============ RAMON'S STORY ============ -->
+<section class="story">
+  <div class="wrap rev">
+    <div class="eyebrow">Why Ramon can teach this</div>
+    <h2>The lights went out on a man who could recite Neville <em>from memory.</em></h2>
+    <p class="drop">Years ago, Ramon lived in a tiny apartment and listened to Neville Goddard every single day. Not casually — devotionally. He knew the lectures so well he could recite whole passages by heart. Ask him anything about imagination creating reality, and he'd score higher than the people teaching it.</p>
+    <p class="drop">And he was broke. Broke enough that one day, the lights got shut off.</p>
+    <p class="drop">Picture it: a man sitting in the dark, in an apartment with no electricity, holding a complete intellectual mastery of how consciousness creates reality. The knowing was total. The being was a dark room.</p>
+    <p class="drop">What changed everything wasn't another idea. It was the realization that knowing and action are the same thing — and a mechanism, practiced daily, that finally moved the needle. It also surfaced every buried belief standing between him and the life he wanted. Both of those — the mechanism and the reason it flushes everything up — are the heart of this class.</p>
+    <p class="punch">He's not teaching from a pedestal. He's teaching from the dark apartment.</p>
+  </div>
+</section>
+
+<div class="gap-line" aria-hidden="true"><span></span><i></i><span></span></div>
+
+<!-- ============ WHAT HAPPENS IN THE HOUR ============ -->
+<section>
+  <div class="wrap rev">
+    <div class="eyebrow">In this one hour</div>
+    <h2>Not a lecture. A <em>recalibration.</em></h2>
+    <ul class="hour-list">
+      <li>
+        <span class="tick">01</span>
+        <div>
+          <h3>Why "knowing more" quietly became the thing keeping you stuck</h3>
+          <p>And why the most sincere, most studied seekers stay stuck the longest — the trap is built for smart people.</p>
+        </div>
+      </li>
+      <li>
+        <span class="tick">02</span>
+        <div>
+          <h3>The one mechanism that actually closes the gap</h3>
+          <p>A deceptively simple practice — and the redefinition of one word that makes it finally usable in your real, current life. Today. At any size.</p>
+        </div>
+      </li>
+      <li>
+        <span class="tick">03</span>
+        <div>
+          <h3>The real reason you don't act — and it isn't discipline</h3>
+          <p>What happens in your body a quarter-second before your mind hands you a perfectly reasonable excuse. Once you see it, you can't unsee it.</p>
+        </div>
+      </li>
+      <li>
+        <span class="tick">04</span>
+        <div>
+          <h3>A live, 3-minute experience — you will feel your gap</h3>
+          <p>This isn't information. Guided by Ramon, you'll locate the exact place your own system pulls back. Physically. In real time.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ LOGISTICS ============ -->
+<section style="padding-top:0">
+  <div class="wrap rev">
+    <div class="logistics">
+      <div><b>Date</b><span>Monday, July&nbsp;27</span></div>
+      <div><b>Time</b><span>8:00–9:00am PT</span></div>
+      <div><b>Format</b><span>Live on Zoom + Q&amp;A</span></div>
+      <div><b>Replay</b><span>Yours, forever</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="gap-line" aria-hidden="true"><span></span><i></i><span></span></div>
+
+<!-- ============ TWO PATHS ============ -->
+<section id="paths">
+  <div class="wrap wide rev">
+    <div style="max-width:680px">
+      <div class="eyebrow">Choose your door</div>
+      <h2>Two ways into the room.</h2>
+      <p class="mute">Both get you the full live class, the Q&amp;A, and the replay forever. One of them is simply a better deal — we're not going to pretend otherwise.</p>
+    </div>
+    <div class="paths">
+      <div class="path">
+        <div class="tag">The Seat</div>
+        <div class="price">$97 <small>one-time</small></div>
+        <ul>
+          <li>The Embodiment Gap — live, July 27</li>
+          <li>Live Q&amp;A with Ramon</li>
+          <li>Replay access, forever</li>
+        </ul>
+        <!-- PASTE $97 THRIVECART CHECKOUT LINK BELOW -->
+        <a class="btn ghost" href="https://creatingthroughenergy.thrivecart.com/embodiment-gap/">Get the seat — $97</a>
+      </div>
+      <div class="path ic">
+        <div class="tag">The Inner Circle — attend free</div>
+        <div class="price">$47<small>/month</small></div>
+        <ul>
+          <li>The Embodiment Gap — live, July 27 — <em>included free</em></li>
+          <li>Live Q&amp;A + replay, forever</li>
+          <li>The 30-Day Subconscious Reset</li>
+          <li>Every future masterclass &amp; monthly Q&amp;A</li>
+          <li>The Inner Circle community</li>
+        </ul>
+        <!-- PASTE INNER CIRCLE THRIVECART CHECKOUT LINK BELOW -->
+        <a class="btn" href="#">Join the Inner Circle — $47/mo</a>
+        <div class="math">Less than the seat. Includes everything. Yes, really.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gap-line" aria-hidden="true"><span></span><i></i><span></span></div>
+
+<!-- ============ FOR / NOT FOR ============ -->
+<section>
+  <div class="wrap rev">
+    <div class="eyebrow">Self-select honestly</div>
+    <h2>This hour is not for everyone.</h2>
+    <div class="forgrid">
+      <div class="yes">
+        <h3>This is for you if</h3>
+        <p>You've consumed years of manifestation, mindset, or spiritual teaching — and you understand it deeply.</p>
+        <p>Your life has not changed in proportion to what you know, and privately, that gap has started to hurt.</p>
+        <p>You're done collecting insights and ready to find out what's actually been in the way.</p>
+        <p>You'd rather hear an uncomfortable truth than a comfortable pitch.</p>
+      </div>
+      <div class="no">
+        <h3>This is not for you if</h3>
+        <p>You're brand new and looking for an introduction to manifestation. This class assumes you know the material.</p>
+        <p>You want another high — a motivating hour that changes nothing. That's the loop this class exists to break.</p>
+        <p>You believe the answer is one more technique. We will lovingly dismantle that belief in the first ten minutes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gap-line" aria-hidden="true"><span></span><i></i><span></span></div>
+
+<!-- ============ FAQ ============ -->
+<section class="faq">
+  <div class="wrap rev">
+    <div class="eyebrow">Questions</div>
+    <h2>Asked &amp; answered.</h2>
+    <details>
+      <summary>What if I can't make it live?</summary>
+      <p>The replay is yours forever — watch it that evening or next year. That said, the live Q&amp;A only happens once, and the 3-minute guided experience lands differently when you're in the room. If you can be live, be live.</p>
+    </details>
+    <details>
+      <summary>Is there a replay?</summary>
+      <p>Yes. Every buyer — seat or Inner Circle — keeps lifetime access to the full recording, including the Q&amp;A.</p>
+    </details>
+    <details>
+      <summary>Is this just another info-dump I'll nod along to and forget?</summary>
+      <p>The opposite — that loop is literally the subject of the class. You'll get one core idea, one mechanism, and a live somatic experience where you feel the problem in your own body. Ramon builds the hour so you leave with something you <em>did</em>, not just something you heard.</p>
+    </details>
+    <details>
+      <summary>Do I need experience with this material?</summary>
+      <p>Some, yes. This class is built for people who already know the teachings — Neville, Dispenza, law of assumption, any of it — and are stuck anyway. If you've never touched this world, you'll still follow it, but the class will hit hardest if the phrase "I know all this and nothing's changed" describes you.</p>
+    </details>
+    <details>
+      <summary>Which option should I pick — $97 or the Inner Circle?</summary>
+      <p>Honestly? The Inner Circle. It's less money, it includes the class free, and you also get the 30-Day Subconscious Reset plus every masterclass and Q&amp;A going forward. The $97 seat exists for people who truly only want this one hour — and that's a fine choice too.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final">
+  <div class="breath" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="eyebrow">Monday, July 27 · 8:00am Pacific</div>
+    <h2>Another year of knowing.<br>Or one hour that <em>closes the gap.</em></h2>
+    <p class="mute" style="max-width:520px;margin:0 auto 10px">You already know what staying in the loop looks like — you're standing in it. This is the other door.</p>
+    <div class="cta-row">
+      <!-- PASTE $97 CHECKOUT LINK BELOW -->
+      <a class="btn ghost" href="https://creatingthroughenergy.thrivecart.com/embodiment-gap/" style="margin:8px">Get the seat — $97</a>
+      <!-- PASTE INNER CIRCLE CHECKOUT LINK BELOW -->
+      <a class="btn" href="#" style="margin:8px">Join the Inner Circle — $47/mo</a>
+      <div class="cta-note">Live on Zoom · Q&amp;A included · Replay is yours forever</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <b>Creating Through Energy</b><br><br>
+  Wealth from Safety &nbsp;·&nbsp; © 2026 Creating Through Energy &nbsp;·&nbsp; Taught live by Ramon Osa
+</footer>
+
+<script>
+  // Gentle scroll reveal
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.12});
+  document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
